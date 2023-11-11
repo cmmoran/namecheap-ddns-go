@@ -1,0 +1,14 @@
+# /etc/systemd/system/namecheap-ddns-go.service
+
+[Unit]
+Description=Update DDNS records for Namecheap
+After=network-online.target
+
+[Service]
+Type=simple
+Environment=NAMECHEAP_DDNS_CONFIG=/etc/namecheap-ddns-go.yaml
+ExecStart=/usr/local/bin/namecheap-ddns-go
+User=<OS USER>
+
+[Install]
+WantedBy=default.target

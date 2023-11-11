@@ -1,0 +1,7 @@
+configs:
+  - domain: "example0.com"
+    subdomains: ["*", "@", "www"]
+    token: "abc123"
+  - domain: "example0.net"
+    subdomains: ["host1", "host2"]
+    token: "xyz321"
