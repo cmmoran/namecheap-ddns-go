@@ -19,11 +19,11 @@ configs: # an array, allows updating multiple domains' subdomains' ip addresses
   - domain: "example0.com" # the domain to update
     subdomains: ["*", "@", "www"] # array of hosts to update
     token: "abc123" # namecheap ddns token. See: Namecheap -> Domain list -> <choose a domain> -> Advanced DNS -> Dynamic DNS -> Dynamic DNS Password
-    # ip: "1.1.1.1" # OPTIONAL ip address to set the domain.subdomain(s). Defaults to the ip making this request
+    # ip: "1.1.1.1" # OPTIONAL ip address to set the subdomain(s).domain. Defaults to the ip making this request
   - domain: "example0.net"
     subdomains: ["host1", "host2"]
     token: "xyz321"
-     # ip: "1.1.1.1" # OPTIONAL ip address to set the domain.subdomain(s). Defaults to the ip making this request
+     # ip: "1.1.1.1" # OPTIONAL ip address to set the subdomain(s).domain. Defaults to the ip making this request
 ```
 
 ## Linux - systemd
